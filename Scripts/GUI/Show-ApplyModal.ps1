@@ -8,7 +8,7 @@ function Show-ApplyModal {
     
     Add-Type -AssemblyName PresentationFramework,PresentationCore,WindowsBase | Out-Null
 
-    # P/Invoke helpers for forcing focus back after Explorer restart
+    # P/Invoke 辅助函数：重启资源管理器后强制获取焦点
     if (-not ([System.Management.Automation.PSTypeName]'Win11Debloat.FocusHelper').Type) {
         Add-Type -Namespace Win11Debloat -Name FocusHelper -MemberDefinition @'
             [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);
@@ -30,10 +30,10 @@ function Show-ApplyModal {
     
     $usesDarkMode = GetSystemUsesDarkMode
     
-    # Determine owner window
+    # 确定所有者窗口
     $ownerWindow = if ($Owner) { $Owner } else { $script:GuiWindow }
     
-    # Show overlay if owner window exists
+    # 如果所有者窗口存在，显示覆盖层
     $overlay = $null
     if ($ownerWindow) {
         try {
@@ -45,7 +45,7 @@ function Show-ApplyModal {
         catch { }
     }
     
-    # Load XAML from file
+    # 从文件加载 XAML
     $xaml = Get-Content -Path $script:ApplyChangesWindowSchema -Raw
     $reader = [System.Xml.XmlReader]::Create([System.IO.StringReader]::new($xaml))
     try {
@@ -55,7 +55,7 @@ function Show-ApplyModal {
         $reader.Close()
     }
     
-    # Set owner to owner window if it exists
+    # 如果所有者窗口存在，设置所有者
     if ($ownerWindow) {
         try {
             $applyWindow.Owner = $ownerWindow
@@ -63,10 +63,10 @@ function Show-ApplyModal {
         catch { }
     }
     
-    # Apply theme resources
+    # 应用主题资源
     SetWindowThemeResources -window $applyWindow -usesDarkMode $usesDarkMode
     
-    # Get UI elements
+    # 获取 UI 元素
     $script:ApplyInProgressPanel = $applyWindow.FindName('ApplyInProgressPanel')
     $script:ApplyCompletionPanel = $applyWindow.FindName('ApplyCompletionPanel')
     $script:ApplyStepNameEl = $applyWindow.FindName('ApplyStepName')
@@ -81,34 +81,34 @@ function Show-ApplyModal {
     $applyKofiBtn = $applyWindow.FindName('ApplyKofiBtn')
     $applyCancelBtn = $applyWindow.FindName('ApplyCancelBtn')
     
-    # Initialize in-progress state
+    # 初始化进行中状态
     $script:ApplyInProgressPanel.Visibility = 'Visible'
     $script:ApplyCompletionPanel.Visibility = 'Collapsed'
-    $script:ApplyStepNameEl.Text = "Preparing..."
-    $script:ApplyStepCounterEl.Text = "Preparing..."
+    $script:ApplyStepNameEl.Text = "准备中..."
+    $script:ApplyStepCounterEl.Text = "准备中..."
     $script:ApplyProgressBarEl.Value = 0
     $script:ApplyModalInErrorState = $false
     
-    # Set up progress callback for ExecuteAllChanges
+    # 为 ExecuteAllChanges 设置进度回调
     $script:ApplyProgressCallback = {
         param($currentStep, $totalSteps, $stepName)
         $script:ApplyStepNameEl.Text = $stepName
-        $script:ApplyStepCounterEl.Text = "Step $currentStep of $totalSteps"
-        # Store current step/total in Tag properties for sub-step interpolation
+        $script:ApplyStepCounterEl.Text = "步骤 $currentStep / $totalSteps"
+        # 将当前步骤/总步骤存储在 Tag 属性中，用于子步骤插值
         $script:ApplyStepCounterEl.Tag = $currentStep
         $script:ApplyProgressBarEl.Tag = $totalSteps
-        # Show progress at the start of each step (empty at step 1, full after last step completes)
+        # 在每个步骤开始时显示进度（步骤1为0%，最后一步完成后为100%）
         $pct = if ($totalSteps -gt 0) { [math]::Round((($currentStep - 1) / $totalSteps) * 100) } else { 0 }
         $script:ApplyProgressBarEl.Value = $pct
-        # Process pending window messages to keep UI responsive
+        # 处理待处理的窗口消息以保持UI响应
         DoEvents
     }
 
-    # Sub-step callback updates step name and interpolates progress bar within the current step
+    # 子步骤回调：更新步骤名称并在当前步骤内插值进度条
     $script:ApplySubStepCallback = {
         param($subStepName, $subIndex, $subCount)
         $script:ApplyStepNameEl.Text = $subStepName
-        # Interpolate progress bar between previous step and current step
+        # 在前一步骤和当前步骤之间插值进度条
         $currentStep = [int]($script:ApplyStepCounterEl.Tag)
         $totalSteps = [int]($script:ApplyProgressBarEl.Tag)
         if ($totalSteps -gt 0 -and $subCount -gt 0) {
@@ -119,18 +119,18 @@ function Show-ApplyModal {
         DoEvents
     }
     
-    # Run changes in background to keep UI responsive
+    # 在后台运行更改以保持UI响应
     $applyWindow.Dispatcher.BeginInvoke([System.Windows.Threading.DispatcherPriority]::Background, [action]{
         try {
             ExecuteAllChanges
 
             $registryImportFailureCount = [int]$script:RegistryImportFailures
             
-            # Restart explorer if requested
+            # 如果需要，重启资源管理器
             if ($RestartExplorer -and -not $script:CancelRequested) {
                 RestartExplorer
                 
-                # Wait for Explorer to finish relaunching, then reclaim focus.
+                # 等待资源管理器重新启动完成，然后重新获取焦点
                 Start-Sleep -Milliseconds 800
                 $applyWindow.Dispatcher.Invoke([action]{
                     $hwnd = (New-Object System.Windows.Interop.WindowInteropHelper($applyWindow)).Handle
@@ -140,12 +140,12 @@ function Show-ApplyModal {
             
             Write-Host ""
             if ($script:CancelRequested) {
-                Write-Host "Script execution was cancelled by the user. Some changes may not have been applied."
+                Write-Host "脚本执行已被用户取消。部分更改可能未应用。"
             } elseif ($registryImportFailureCount -eq 0) {
-                Write-Host "All changes have been applied successfully!"
+                Write-Host "所有更改已成功应用!"
             }
             
-            # Show completion state
+            # 显示完成状态
             $script:ApplyProgressBarEl.Value = 100
             $script:ApplyInProgressPanel.Visibility = 'Collapsed'
             $script:ApplyCompletionPanel.Visibility = 'Visible'
@@ -153,17 +153,17 @@ function Show-ApplyModal {
             if ($script:CancelRequested) {
                 $script:ApplyCompletionIconEl.Text = [char]0xE7BA
                 $script:ApplyCompletionIconEl.Foreground = [System.Windows.Media.SolidColorBrush]::new([System.Windows.Media.ColorConverter]::ConvertFromString("#e8912d"))
-                $script:ApplyCompletionTitleEl.Text = "Cancelled"
-                $script:ApplyCompletionMessageEl.Text = "Script execution was cancelled by the user."
+                $script:ApplyCompletionTitleEl.Text = "已取消"
+                $script:ApplyCompletionMessageEl.Text = "脚本执行已被用户取消。"
             } elseif ($registryImportFailureCount -gt 0) {
                 $script:ApplyCompletionIconEl.Text = [char]0xE7BA
                 $script:ApplyCompletionIconEl.Foreground = [System.Windows.Media.SolidColorBrush]::new([System.Windows.Media.ColorConverter]::ConvertFromString("#e8912d"))
-                $script:ApplyCompletionTitleEl.Text = "Changes Applied with Errors"
-                $script:ApplyCompletionMessageEl.Text = "$registryImportFailureCount registry change(s) failed. See console for details."
+                $script:ApplyCompletionTitleEl.Text = "更改已应用但有错误"
+                $script:ApplyCompletionMessageEl.Text = "$registryImportFailureCount 个注册表更改失败。详情请查看控制台。"
             } else {
-                $script:ApplyCompletionTitleEl.Text = "Changes Applied"
+                $script:ApplyCompletionTitleEl.Text = "更改已应用"
 
-                # Show completion message with reboot instructions if any applied features require reboot
+                # 如果有任何应用的功能需要重启，显示重启提示
                 if ($RestartExplorer) {
                     $rebootFeatures = @()
                     foreach ($paramKey in $script:Params.Keys) {
@@ -186,36 +186,36 @@ function Show-ApplyModal {
                         $applyRebootPanel.Visibility = 'Visible'
                     }
                     else {
-                        $script:ApplyCompletionMessageEl.Text = "Your clean system is ready. Thanks for using Win11Debloat!"
+                        $script:ApplyCompletionMessageEl.Text = "您的纯净系统已准备就绪。感谢使用 Win11Debloat！"
                     }
                 }
             }
             $applyWindow.Dispatcher.Invoke([System.Windows.Threading.DispatcherPriority]::Render, [action]{})
         }
         catch {
-            Write-Host "Error: $($_.Exception.Message)"
+            Write-Host "错误: $($_.Exception.Message)"
             $script:ApplyInProgressPanel.Visibility = 'Collapsed'
             $script:ApplyCompletionPanel.Visibility = 'Visible'
             $script:ApplyCompletionIconEl.Text = [char]0xEA39
             $script:ApplyCompletionIconEl.Foreground = [System.Windows.Media.SolidColorBrush]::new([System.Windows.Media.ColorConverter]::ConvertFromString("#c42b1c"))
-            $script:ApplyCompletionTitleEl.Text = "Error"
-            $script:ApplyCompletionMessageEl.Text = "An error occurred while applying changes: $($_.Exception.Message)"
+            $script:ApplyCompletionTitleEl.Text = "错误"
+            $script:ApplyCompletionMessageEl.Text = "应用更改时发生错误: $($_.Exception.Message)"
             
-            # Set error state to change Kofi button to report link
+            # 设置错误状态以将Kofi按钮更改为报告链接
             $script:ApplyModalInErrorState = $true
 
-            # Update Kofi button to be a report issue button
+            # 将Kofi按钮更新为报告问题按钮
             $applyKofiBtn.Content = $null
             
             $reportText = [System.Windows.Controls.TextBlock]::new()
-            $reportText.Text = 'Report a bug'
+            $reportText.Text = '报告问题'
             $reportText.VerticalAlignment = 'Center'
             $reportText.FontSize = 14
             $reportText.Margin = [System.Windows.Thickness]::new(0, 0, 0, 1)
 
             $applyKofiBtn.Content = $reportText
             
-            [System.Windows.Automation.AutomationProperties]::SetName($applyKofiBtn, 'Report a bug')
+            [System.Windows.Automation.AutomationProperties]::SetName($applyKofiBtn, '报告问题')
             
             $applyWindow.Dispatcher.Invoke([System.Windows.Threading.DispatcherPriority]::Render, [action]{})
         }
@@ -225,7 +225,7 @@ function Show-ApplyModal {
         }
     }) | Out-Null
     
-    # Button handlers
+    # 按钮事件处理
     $applyCloseBtn.Add_Click({
         $applyWindow.Close()
     })
@@ -240,20 +240,20 @@ function Show-ApplyModal {
 
     $applyCancelBtn.Add_Click({
         if ($script:ApplyCompletionPanel.Visibility -eq 'Visible') {
-            # Completion state - just close
+            # 完成状态 - 直接关闭
             $applyWindow.Close()
         } else {
-            # In-progress state - request cancellation
+            # 进行中状态 - 请求取消
             $script:CancelRequested = $true
         }
     })
     
-    # Show dialog
+    # 显示对话框
     try {
         $applyWindow.ShowDialog() | Out-Null
     }
     finally {
-        # Hide overlay after dialog closes
+        # 对话框关闭后隐藏覆盖层
         if ($overlay) {
             try {
                 $ownerWindow.Dispatcher.Invoke([action]{ $overlay.Visibility = 'Collapsed' })
