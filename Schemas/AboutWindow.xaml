@@ -1,0 +1,146 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About Win11Debloat" 
+        Width="500"
+        SizeToContent="Height"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Topmost="False"
+        ShowInTaskbar="False">
+
+    <Border Style="{DynamicResource ModalCardBorderStyle}">
+        
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title Bar -->
+            <Grid Grid.Row="0" x:Name="TitleBar" Style="{DynamicResource ModalTitleBarStyle}">
+                <TextBlock Text="关于 Win11Debloat" 
+                           Style="{DynamicResource ModalTitleTextStyle}"/>
+            </Grid>
+
+            <!-- Message Content -->
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- Message Text -->
+                <Grid Grid.Row="0" Margin="20,4,20,20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+                    <!-- Version -->
+                    <TextBlock Grid.Row="0" Grid.Column="0"
+                            Text="版本:"
+                            Style="{DynamicResource ModalInfoLabelTextStyle}"/>
+                    <TextBlock x:Name="VersionText"
+                            Grid.Row="0" Grid.Column="1"
+                            Text="0.0.0"
+                            Style="{DynamicResource ModalInfoValueTextStyle}"/>
+                    
+                    <!-- Author -->
+                    <TextBlock Grid.Row="1" Grid.Column="0"
+                            Text="作者:"
+                            Style="{DynamicResource ModalInfoLabelTextStyle}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1"
+                            Text="Raphire"
+                            Style="{DynamicResource ModalInfoValueTextStyle}"/>
+
+                    <!-- 汉化 -->
+                    <TextBlock Grid.Row="2" Grid.Column="0"
+                           Text="汉化:"
+                           Style="{DynamicResource ModalInfoLabelTextStyle}"/>
+                    <TextBlock x:Name="hanhuaLink"
+                           Grid.Row="2" Grid.Column="1"
+                           Text="未必然"
+                           Style="{DynamicResource HyperlinkStyle}"
+                           Margin="0,0,0,0"/>
+                    
+                    <!-- Project Link -->
+                    <TextBlock Grid.Row="3" Grid.Column="0"
+                            Text="源码仓库:"
+                            Style="{DynamicResource ModalInfoLabelTextStyle}"
+                            Margin="0,0,16,0"/>
+                    <TextBlock x:Name="ProjectLink"
+                            Grid.Row="3" Grid.Column="1"
+                            Text="https://github.com/Raphire/Win11Debloat" 
+                            FontSize="13"
+                            Style="{DynamicResource HyperlinkStyle}"
+                            Margin="0,0,0,0"/>
+                </Grid>
+
+                <!-- Separator -->
+                <Border Grid.Row="1" 
+                        Height="1" 
+                        Background="{DynamicResource BorderColor}"
+                        Margin="20,0"/>
+
+                <!-- Content -->
+                <StackPanel Grid.Row="2" Margin="20,18,20,20">
+                    <!-- Donation Message -->
+                    <TextBlock Text="Win11Debloat 是 Raphire 利用业余时间开发维护的一个小工具，纯粹是出于热爱。如果你觉得它挺好用，不妨请 Raphire 喝杯咖啡，支持一下后续的开发。你的每一份支持，对 Raphire 来说都意义非凡！"
+                            FontSize="14"
+                            Foreground="{DynamicResource FgColor}"
+                            TextWrapping="Wrap"
+                            Margin="0,0,0,15"/>
+
+                    <!-- Ko-fi Link -->
+                    <Grid HorizontalAlignment="Left">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock x:Name="KofiLinkIcon"
+                                Grid.Column="0"
+                                FontSize="16"
+                                Style="{DynamicResource HyperlinkStyle}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="SemiBold"
+                                FontFamily="Segoe Fluent Icons"
+                                Text="&#xEB52;" 
+                                Foreground="{DynamicResource CloseHover}"
+                                Margin="0,0,8,0"/>
+                        
+                        <TextBlock x:Name="KofiLink"
+                                Grid.Column="1"
+                                FontSize="16"
+                                Style="{DynamicResource HyperlinkStyle}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontWeight="SemiBold"
+                                Text="去 Ko-fi 支持 Raphire"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+
+            <!-- Button Panel -->
+            <Border Grid.Row="2" Style="{DynamicResource ModalFooterBorderStyle}">
+                <StackPanel x:Name="ButtonPanel" Style="{DynamicResource ModalFooterButtonsRightStyle}">
+                    <Button x:Name="CloseButton" 
+                            Content="关闭" 
+                            Style="{DynamicResource ModalSecondaryActionButtonStyle}"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,1074 @@
+{
+  "Version": "1.1",
+  "Apps": [
+    {
+      "FriendlyName": "Clipchamp",
+      "AppId": "Clipchamp.Clipchamp",
+      "Description": "微软出品的视频编辑器",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "3D Builder",
+      "AppId": "Microsoft.3DBuilder",
+      "Description": "基础3D建模软件",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Cortana",
+      "AppId": "Microsoft.549981C3F5F10",
+      "Description": "微软Cortana语音助手 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing财经",
+      "AppId": "Microsoft.BingFinance",
+      "Description": "通过必应获取财经新闻和追踪 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing美食与饮品",
+      "AppId": "Microsoft.BingFoodAndDrink",
+      "Description": "通过必应获取食谱和美食资讯 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing健康与健身",
+      "AppId": "Microsoft.BingHealthAndFitness",
+      "Description": "通过必应进行健康健身追踪/获取资讯 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing新闻",
+      "AppId": "Microsoft.BingNews",
+      "Description": "通过必应聚合新闻 (已被Microsoft新闻/Start取代)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing体育",
+      "AppId": "Microsoft.BingSports",
+      "Description": "通过必应获取体育新闻和比分 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing翻译",
+      "AppId": "Microsoft.BingTranslator",
+      "Description": "通过必应提供的翻译服务",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing旅游",
+      "AppId": "Microsoft.BingTravel",
+      "Description": "通过必应进行旅游规划和获取资讯 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Bing天气",
+      "AppId": "Microsoft.BingWeather",
+      "Description": "通过必应获取天气预报",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Copilot",
+      "AppId": "Microsoft.Copilot",
+      "Description": "集成到Windows中的AI助手",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Copilot+ AI中心",
+      "AppId": "Microsoft.Windows.AIHub",
+      "Description": "Copilot+ AI中心应用 (Windows 11 24H2及以上版本)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "微软电脑管家",
+      "AppId": "Microsoft.PCManager",
+      "Description": "微软电脑管家系统清理和优化工具 (通常预装)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "入门指南",
+      "AppId": "Microsoft.Getstarted",
+      "Description": "Windows使用提示和入门向导 (在Windows 11中无法卸载)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "消息",
+      "AppId": "Microsoft.Messaging",
+      "Description": "消息应用，通常与Skype集成 (基本已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "3D查看器",
+      "AppId": "Microsoft.Microsoft3DViewer",
+      "Description": "3D模型查看器",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "微软日记",
+      "AppId": "Microsoft.MicrosoftJournal",
+      "Description": "专为笔输入优化的数字笔记应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Office中心",
+      "AppId": "Microsoft.MicrosoftOfficeHub",
+      "Description": "访问微软Office应用和文档的中心 (Microsoft 365应用的前身)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Power BI",
+      "AppId": "Microsoft.MicrosoftPowerBIForWindows",
+      "Description": "商业分析服务客户端",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "纸牌合集",
+      "AppId": "Microsoft.MicrosoftSolitaireCollection",
+      "Description": "纸牌游戏合集",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "便利贴",
+      "AppId": "Microsoft.MicrosoftStickyNotes",
+      "Description": "数字便利贴应用 (已停止服务，被OneNote取代)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "混合现实门户",
+      "AppId": "Microsoft.MixedReality.Portal",
+      "Description": "Windows混合现实头戴设备的门户",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "网络速度测试",
+      "AppId": "Microsoft.NetworkSpeedTest",
+      "Description": "互联网连接速度测试工具",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "微软新闻",
+      "AppId": "Microsoft.News",
+      "Description": "新闻聚合器 (取代了Bing新闻，现为Microsoft Start的一部分)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "OneNote",
+      "AppId": "Microsoft.Office.OneNote",
+      "Description": "数字笔记应用 (通用Windows平台版本)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Sway",
+      "AppId": "Microsoft.Office.Sway",
+      "Description": "演示和故事讲述应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "One Connect",
+      "AppId": "Microsoft.OneConnect",
+      "Description": "移动运营商管理应用 (已被Mobile Plans取代)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "3D打印",
+      "AppId": "Microsoft.Print3D",
+      "Description": "3D打印准备软件",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Power Automate",
+      "AppId": "Microsoft.PowerAutomateDesktop",
+      "Description": "桌面自动化工具 (RPA机器人流程自动化)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Skype (UWP版)",
+      "AppId": "Microsoft.SkypeApp",
+      "Description": "Skype通信应用，通用Windows平台版本 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "微软待办",
+      "AppId": "Microsoft.Todos",
+      "Description": "待办事项和任务管理应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "开发人员主页",
+      "AppId": "Microsoft.Windows.DevHome",
+      "Description": "开发人员仪表板和工具配置实用程序 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "闹钟和时钟",
+      "AppId": "Microsoft.WindowsAlarms",
+      "Description": "闹钟和时钟应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "反馈中心",
+      "AppId": "Microsoft.WindowsFeedbackHub",
+      "Description": "向微软提供Windows反馈的应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Windows地图",
+      "AppId": "Microsoft.WindowsMaps",
+      "Description": "地图和导航应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "录音机",
+      "AppId": "Microsoft.WindowsSoundRecorder",
+      "Description": "基础音频录制应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Xbox控制台小助手",
+      "AppId": "Microsoft.XboxApp",
+      "Description": "旧版Xbox控制台小助手应用 (已停止服务)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "电影和电视",
+      "AppId": "Microsoft.ZuneVideo",
+      "Description": "租借/购买/播放视频内容的电影和电视应用 (已更名为“电影和电视”)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "家庭安全",
+      "AppId": "MicrosoftCorporationII.MicrosoftFamily",
+      "Description": "管理家庭账户和设置的家庭安全应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "快速助手",
+      "AppId": "MicrosoftCorporationII.QuickAssist",
+      "Description": "远程协助工具",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Microsoft Teams (旧版)",
+      "AppId": "MicrosoftTeams",
+      "Description": "旧版Microsoft Teams个人版 (微软商店版本)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Microsoft Teams (新版)",
+      "AppId": "MSTeams",
+      "Description": "新版Microsoft Teams应用 (工作/学校或个人版)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "ACG媒体播放器",
+      "AppId": "ACGMediaPlayer",
+      "Description": "媒体播放器应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Actipro软件",
+      "AppId": "ActiproSoftwareLLC",
+      "Description": "可能是UI控件或软件组件，通常由OEM厂商捆绑安装",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Adobe Photoshop Express",
+      "AppId": "AdobeSystemsIncorporated.AdobePhotoshopExpress",
+      "Description": "Adobe出品的基础照片编辑应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "亚马逊",
+      "AppId": "Amazon.com.Amazon",
+      "Description": "亚马逊购物应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Prime Video",
+      "AppId": "AmazonVideo.PrimeVideo",
+      "Description": "亚马逊Prime Video流媒体服务应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "狂野飙车8",
+      "AppId": "Asphalt8Airborne",
+      "Description": "赛车游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Autodesk SketchBook",
+      "AppId": "AutodeskSketchBook",
+      "Description": "数字绘画和素描应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "凯撒老虎机",
+      "AppId": "CaesarsSlotsFreeCasino",
+      "Description": "赌场老虎机游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "烹饪发烧友",
+      "AppId": "COOKINGFEVER",
+      "Description": "餐厅模拟游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "讯连科技媒体套件",
+      "AppId": "CyberLinkMediaSuiteEssentials",
+      "Description": "多媒体软件套件 (通常由OEM厂商预装)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "迪士尼魔法王国",
+      "AppId": "DisneyMagicKingdoms",
+      "Description": "迪士尼主题公园建造游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "迪士尼",
+      "AppId": "Disney",
+      "Description": "迪士尼内容应用 (可能因地区/OEM而异，通常是Disney+)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Drawboard PDF",
+      "AppId": "DrawboardPDF",
+      "Description": "PDF查看和批注应用，通常专注于笔输入",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "多邻国",
+      "AppId": "Duolingo-LearnLanguagesforFree",
+      "Description": "语言学习应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Eclipse管理器",
+      "AppId": "EclipseManager",
+      "Description": "通常与特定OEM软件或实用程序相关 (例如管理屏幕设置)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Facebook",
+      "AppId": "Facebook",
+      "Description": "Facebook社交媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "农场小镇2",
+      "AppId": "FarmVille2CountryEscape",
+      "Description": "农场模拟游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Fitbit",
+      "AppId": "fitbit",
+      "Description": "Fitbit活动追踪器配套应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Flipboard",
+      "AppId": "Flipboard",
+      "Description": "以杂志风格呈现的新闻和社交网络聚合器",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "隐藏之城",
+      "AppId": "HiddenCity",
+      "Description": "隐藏物品解谜冒险游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Hulu",
+      "AppId": "HULULLC.HULUPLUS",
+      "Description": "Hulu流媒体服务应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "iHeartRadio",
+      "AppId": "iHeartRadio",
+      "Description": "互联网电台流媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Instagram",
+      "AppId": "Instagram",
+      "Description": "Instagram社交媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "泡泡女巫3",
+      "AppId": "king.com.BubbleWitch3Saga",
+      "Description": "King公司出品的益智游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "糖果传奇",
+      "AppId": "king.com.CandyCrushSaga",
+      "Description": "King公司出品的益智游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "糖果苏打传奇",
+      "AppId": "king.com.CandyCrushSodaSaga",
+      "Description": "King公司出品的益智游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "领英",
+      "AppId": "LinkedInforWindows",
+      "Description": "领英职业社交应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "帝国纪元",
+      "AppId": "MarchofEmpires",
+      "Description": "策略游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Netflix",
+      "AppId": "Netflix",
+      "Description": "Netflix流媒体服务应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "纽约时报填字游戏",
+      "AppId": "NYTCrossword",
+      "Description": "纽约时报填字游戏应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "One Calendar",
+      "AppId": "OneCalendar",
+      "Description": "日历聚合应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Pandora",
+      "AppId": "PandoraMediaInc",
+      "Description": "Pandora音乐流媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Phototastic拼贴",
+      "AppId": "PhototasticCollage",
+      "Description": "照片拼贴创作应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "PicsArt",
+      "AppId": "PicsArt-PhotoStudio",
+      "Description": "照片编辑和创意应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Plex",
+      "AppId": "Plex",
+      "Description": "媒体服务器和播放器应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Polarr照片编辑器",
+      "AppId": "PolarrPhotoEditorAcademicEdition",
+      "Description": "照片编辑应用 (学术版)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "皇家起义",
+      "AppId": "Royal Revolt",
+      "Description": "塔防/策略游戏",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Shazam",
+      "AppId": "Shazam",
+      "Description": "音乐识别应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "动态壁纸",
+      "AppId": "Sidia.LiveWallpaper",
+      "Description": "动态壁纸应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Sling TV",
+      "AppId": "SlingTV",
+      "Description": "直播电视流媒体服务应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Spotify",
+      "AppId": "Spotify",
+      "Description": "Spotify音乐流媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "TikTok",
+      "AppId": "TikTok",
+      "Description": "TikTok短视频应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "TuneIn电台",
+      "AppId": "TuneInRadio",
+      "Description": "互联网电台流媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Twitter",
+      "AppId": "Twitter",
+      "Description": "Twitter (现为X) 社交媒体应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "Viber",
+      "AppId": "Viber",
+      "Description": "消息和通话应用",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "WinZip",
+      "AppId": "WinZipUniversal",
+      "Description": "文件压缩和解压工具 (通用Windows平台版本)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "奇妙清单",
+      "AppId": "Wunderlist",
+      "Description": "待办事项应用 (被微软收购，功能已迁移至微软待办)",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "XING",
+      "AppId": "XING",
+      "Description": "在德语国家流行的职业社交平台",
+      "SelectedByDefault": true,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "必应搜索",
+      "AppId": "Microsoft.BingSearch",
+      "Description": "微软必应的网络搜索功能（集成到Windows搜索中）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Microsoft Edge",
+      "AppId": ["Microsoft.Edge", "XPFFTQ037JWMHS"],
+      "Description": "Windows的默认浏览器，警告：移除此应用也会移除Windows沙盒中的唯一浏览器，并可能影响其他应用",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "Xbox游戏应用",
+      "AppId": "Microsoft.GamingApp",
+      "Description": "现代Xbox游戏应用，安装某些PC游戏所必需",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "获取帮助",
+      "AppId": "Microsoft.GetHelp",
+      "Description": "某些Windows 11故障排除程序和支持交互所必需",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "Microsoft 365配套应用",
+      "AppId": "Microsoft.M365Companions",
+      "Description": "Microsoft 365（商业版）日历、文件和人员迷你应用，如果您的Microsoft 365管理员启用，这些应用可能会被重新安装",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "画图3D",
+      "AppId": "Microsoft.MSPaint",
+      "Description": "画图3D（具有3D功能的现代画图应用）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "OneDrive",
+      "AppId": "Microsoft.OneDrive",
+      "Description": "OneDrive个人云存储客户端",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Windows版Outlook",
+      "AppId": "Microsoft.OutlookForWindows",
+      "Description": "新的Windows版Outlook邮件客户端",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "画图",
+      "AppId": "Microsoft.Paint",
+      "Description": "经典画图（传统的2D画图应用）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "人员",
+      "AppId": "Microsoft.People",
+      "Description": "邮件和日历应用所必需并包含在其中（已停止服务）",
+      "SelectedByDefault": false,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "远程桌面",
+      "AppId": "Microsoft.RemoteDesktop",
+      "Description": "远程桌面客户端应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "截图工具",
+      "AppId": "Microsoft.ScreenSketch",
+      "Description": "截图工具（屏幕截图和批注工具）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "小组件体验",
+      "AppId": "Microsoft.StartExperiencesApp",
+      "Description": "此应用为Windows小组件“我的动态”提供支持",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "白板",
+      "AppId": "Microsoft.Whiteboard",
+      "Description": "数字协作白板应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "照片",
+      "AppId": "Microsoft.Windows.Photos",
+      "Description": "默认的照片查看和基础编辑应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "计算器",
+      "AppId": "Microsoft.WindowsCalculator",
+      "Description": "计算器应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "相机",
+      "AppId": "Microsoft.WindowsCamera",
+      "Description": "使用内置或连接相机的相机应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "邮件和日历",
+      "AppId": "Microsoft.windowscommunicationsapps",
+      "Description": "邮件和日历应用套件（已停止服务）",
+      "SelectedByDefault": false,
+      "Recommendation": "safe"
+    },
+    {
+      "FriendlyName": "记事本",
+      "AppId": "Microsoft.WindowsNotepad",
+      "Description": "记事本文本编辑器应用",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Microsoft Store",
+      "AppId": "Microsoft.WindowsStore",
+      "Description": "Microsoft商店，警告：此应用移除后无法轻松重新安装！",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "Windows终端",
+      "AppId": "Microsoft.WindowsTerminal",
+      "Description": "Windows 11中的默认终端应用（命令提示符、PowerShell、WSL）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Xbox TCUI框架",
+      "AppId": "Microsoft.Xbox.TCUI",
+      "Description": "UI框架，似乎是Microsoft商店、照片和某些游戏所必需的",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "Xbox游戏叠加层",
+      "AppId": "Microsoft.XboxGameOverlay",
+      "Description": "游戏叠加层，某些游戏所必需/有用（Xbox游戏栏的一部分）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Xbox游戏叠加层",
+      "AppId": "Microsoft.XboxGamingOverlay",
+      "Description": "游戏叠加层，某些游戏所必需/有用（Xbox游戏栏的一部分）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Xbox身份提供程序",
+      "AppId": "Microsoft.XboxIdentityProvider",
+      "Description": "Xbox登录框架，某些游戏和Xbox服务所必需",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "Xbox语音转文本",
+      "AppId": "Microsoft.XboxSpeechToTextOverlay",
+      "Description": "某些游戏所需的辅助功能，警告：此应用无法轻松重新安装！",
+      "SelectedByDefault": false,
+      "Recommendation": "unsafe"
+    },
+    {
+      "FriendlyName": "手机连接",
+      "AppId": "Microsoft.YourPhone",
+      "Description": "手机连接（将Android/iOS手机连接到PC）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "媒体播放器",
+      "AppId": "Microsoft.ZuneMusic",
+      "Description": "现代媒体播放器（取代了Groove音乐，播放本地音频/视频）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "跨设备体验",
+      "AppId": "MicrosoftWindows.CrossDevice",
+      "Description": "文件资源管理器、相机等中的手机集成功能（手机连接功能的一部分）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "Windows Web体验包",
+      "AppId": "MicrosoftWindows.Client.WebExperience",
+      "Description": "帮助通过Microsoft商店交付和更新某些功能，如小组件",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "小组件平台运行时",
+      "AppId": "Microsoft.WidgetsPlatformRuntime",
+      "Description": "Windows小组件正常运行所需的运行时",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP AI体验中心",
+      "AppId": "AD2F1837.HPAIExperienceCenter",
+      "Description": "HP OEM软件，AI增强功能和支持",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP Connected Music",
+      "AppId": "AD2F1837.HPConnectedMusic",
+      "Description": "HP OEM音乐软件（可能已停止服务）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP Connected Photo",
+      "AppId": "AD2F1837.HPConnectedPhotopoweredbySnapfish",
+      "Description": "HP OEM照片软件，与Snapfish集成（可能已停止服务）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP桌面支持实用程序",
+      "AppId": "AD2F1837.HPDesktopSupportUtilities",
+      "Description": "HP OEM软件，提供桌面支持工具",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP Easy Clean",
+      "AppId": "AD2F1837.HPEasyClean",
+      "Description": "HP OEM系统清理或优化软件",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP文件查看器",
+      "AppId": "AD2F1837.HPFileViewer",
+      "Description": "HP OEM软件，用于查看特定文件类型",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP JumpStarts",
+      "AppId": "AD2F1837.HPJumpStarts",
+      "Description": "HP OEM软件，用于教程、应用发现或快速访问HP功能",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP PC硬件诊断",
+      "AppId": "AD2F1837.HPPCHardwareDiagnosticsWindows",
+      "Description": "HP OEM软件，用于PC硬件诊断",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP电源管理器",
+      "AppId": "AD2F1837.HPPowerManager",
+      "Description": "HP OEM软件，用于管理电源设置和电池",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP打印机控制",
+      "AppId": "AD2F1837.HPPrinterControl",
+      "Description": "HP OEM软件，用于管理HP打印机",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP隐私设置",
+      "AppId": "AD2F1837.HPPrivacySettings",
+      "Description": "HP OEM软件，用于管理隐私设置",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP QuickDrop",
+      "AppId": "AD2F1837.HPQuickDrop",
+      "Description": "HP OEM软件，用于设备间快速文件传输",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP QuickTouch",
+      "AppId": "AD2F1837.HPQuickTouch",
+      "Description": "HP OEM软件，可能用于触摸特定快捷方式或控制",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP注册",
+      "AppId": "AD2F1837.HPRegistration",
+      "Description": "HP OEM软件，用于产品注册",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP支持助手",
+      "AppId": "AD2F1837.HPSupportAssistant",
+      "Description": "HP OEM软件，用于支持、更新和故障排除",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP Sure Shield AI",
+      "AppId": "AD2F1837.HPSureShieldAI",
+      "Description": "HP OEM安全软件，可能是基于AI的威胁防护",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP系统信息",
+      "AppId": "AD2F1837.HPSystemInformation",
+      "Description": "HP OEM软件，用于显示系统信息",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP欢迎",
+      "AppId": "AD2F1837.HPWelcome",
+      "Description": "HP OEM软件，提供欢迎体验或初始设置帮助",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "HP WorkWell",
+      "AppId": "AD2F1837.HPWorkWell",
+      "Description": "HP OEM软件，专注于健康，可能包含休息提醒或人体工学提示",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "myHP",
+      "AppId": "AD2F1837.myHP",
+      "Description": "HP OEM中心枢纽应用，用于设备信息、支持和服务",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "联想Vantage",
+      "AppId": "E046963F.LenovoCompanion",
+      "Description": "联想OEM中心应用，用于设备设置、更新和支持",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "联想Vantage服务",
+      "AppId": "LenovoCompanyLimited.LenovoVantageService",
+      "Description": "联想Vantage的后台服务组件",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "戴尔SupportAssist",
+      "AppId": "DellInc.DellSupportAssistforPCs",
+      "Description": "戴尔OEM支持、诊断和更新工具",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "戴尔数字交付服务",
+      "AppId": "DellInc.DellDigitalDelivery",
+      "Description": "戴尔OEM软件，用于交付预购软件",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    },
+    {
+      "FriendlyName": "戴尔移动连接",
+      "AppId": "DellInc.DellMobileConnect",
+      "Description": "戴尔OEM应用，用于将Android/iOS手机连接到PC（已被手机连接取代）",
+      "SelectedByDefault": false,
+      "Recommendation": "optional"
+    }
+  ],
+  "Presets": [
+    {
+      "Name": "Xbox游戏应用",
+      "AppIds": [
+        "Microsoft.GamingApp",
+        "Microsoft.XboxGameOverlay",
+        "Microsoft.XboxGamingOverlay"
+      ]
+    },
+    {
+      "Name": "OEM软件（戴尔、HP、联想）",
+      "AppIds": [
+        "AD2F1837.HPAIExperienceCenter",
+        "AD2F1837.HPConnectedMusic",
+        "AD2F1837.HPConnectedPhotopoweredbySnapfish",
+        "AD2F1837.HPDesktopSupportUtilities",
+        "AD2F1837.HPEasyClean",
+        "AD2F1837.HPFileViewer",
+        "AD2F1837.HPJumpStarts",
+        "AD2F1837.HPPCHardwareDiagnosticsWindows",
+        "AD2F1837.HPPowerManager",
+        "AD2F1837.HPPrinterControl",
+        "AD2F1837.HPPrivacySettings",
+        "AD2F1837.HPQuickDrop",
+        "AD2F1837.HPQuickTouch",
+        "AD2F1837.HPRegistration",
+        "AD2F1837.HPSupportAssistant",
+        "AD2F1837.HPSureShieldAI",
+        "AD2F1837.HPSystemInformation",
+        "AD2F1837.HPWelcome",
+        "AD2F1837.HPWorkWell",
+        "AD2F1837.myHP",
+        "E046963F.LenovoCompanion",
+        "LenovoCompanyLimited.LenovoVantageService",
+        "DellInc.DellSupportAssistforPCs",
+        "DellInc.DellDigitalDelivery",
+        "DellInc.DellMobileConnect"
+      ]
+    }
+  ]
+}

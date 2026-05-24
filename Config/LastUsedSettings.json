@@ -1,0 +1,69 @@
+﻿{
+    "Version":  "1.0",
+    "Settings":  [
+                     {
+                         "Value":  true,
+                         "Name":  "RemoveApps"
+                     },
+                     {
+                         "Value":  "Microsoft.3DBuilder,Microsoft.Microsoft3DViewer,ACGMediaPlayer,ActiproSoftwareLLC,AdobeSystemsIncorporated.AdobePhotoshopExpress,Microsoft.WindowsAlarms,Amazon.com.Amazon,Asphalt8Airborne,AutodeskSketchBook,Microsoft.BingFinance,Microsoft.BingFoodAndDrink,Microsoft.BingHealthAndFitness,Microsoft.BingNews,Microsoft.BingSports,Microsoft.BingTranslator,Microsoft.BingTravel,Microsoft.BingWeather,king.com.BubbleWitch3Saga,CaesarsSlotsFreeCasino,king.com.CandyCrushSaga,king.com.CandyCrushSodaSaga,Clipchamp.Clipchamp,COOKINGFEVER,Microsoft.Copilot,Microsoft.Windows.AIHub,Microsoft.549981C3F5F10,CyberLinkMediaSuiteEssentials,Microsoft.Windows.DevHome,Disney,DisneyMagicKingdoms,DrawboardPDF,Duolingo-LearnLanguagesforFree,EclipseManager,Facebook,MicrosoftCorporationII.MicrosoftFamily,FarmVille2CountryEscape,Microsoft.WindowsFeedbackHub,fitbit,Flipboard,Microsoft.Getstarted,HiddenCity,HULULLC.HULUPLUS,iHeartRadio,Instagram,LinkedInforWindows,Sidia.LiveWallpaper,MarchofEmpires,Microsoft.Messaging,Microsoft.MicrosoftJournal,Microsoft.News,Microsoft.PCManager,MSTeams,MicrosoftTeams,Microsoft.Todos,Microsoft.MixedReality.Portal,Microsoft.ZuneVideo,Netflix,Microsoft.NetworkSpeedTest,NYTCrossword,Microsoft.MicrosoftOfficeHub,OneCalendar,Microsoft.OneConnect,Microsoft.Office.OneNote,PandoraMediaInc,PhototasticCollage,PicsArt-PhotoStudio,Plex,PolarrPhotoEditorAcademicEdition,Microsoft.PowerAutomateDesktop,Microsoft.MicrosoftPowerBIForWindows,AmazonVideo.PrimeVideo,Microsoft.Print3D,MicrosoftCorporationII.QuickAssist,Royal Revolt,Shazam,Microsoft.SkypeApp,SlingTV,Microsoft.MicrosoftSolitaireCollection,Microsoft.WindowsSoundRecorder,Spotify,Microsoft.MicrosoftStickyNotes,Microsoft.Office.Sway,TikTok,TuneInRadio,Twitter,Viber,Microsoft.WindowsMaps,WinZipUniversal,Wunderlist,Microsoft.XboxApp,XING",
+                         "Name":  "Apps"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableTelemetry"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableWidgets"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableLockscreenTips"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableAISvcAutoStart"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableStoreSearchSuggestions"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableSuggestions"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "ShowKnownFileExt"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableCopilot"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableClickToDo"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableBing"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableRecall"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableDragTray"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "DisableEdgeAds"
+                     },
+                     {
+                         "Value":  true,
+                         "Name":  "CreateRestorePoint"
+                     }
+                 ]
+}
