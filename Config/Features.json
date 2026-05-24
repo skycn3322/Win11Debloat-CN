@@ -661,7 +661,7 @@
     },
     {
       "FeatureId": "EnableDarkMode",
-      "Label": "系统和应用的主题",
+      "Label": "启用深色模式",
       "ToolTip": "这将把应用和系统主题设置为深色模式。",
       "Category": "外观",
       "RegistryKey": "Enable_Dark_Mode.reg",
@@ -1080,7 +1080,7 @@
     },
     {
       "FeatureId": "ShowKnownFileExt",
-      "Label": "已知文件类型的文件扩展名",
+      "Label": "显示已知文件类型的文件扩展名",
       "ToolTip": "这将显示已知文件类型的文件扩展名。默认情况下，Windows 隐藏已知文件类型的文件扩展名，这可能导致混淆和安全风险。",
       "Category": "Windows 资源管理器",
       "Priority": 2,
@@ -1092,7 +1092,7 @@
     },
     {
       "FeatureId": "ShowHiddenFolders",
-      "Label": "隐藏的文件、文件夹和驱动器",
+      "Label": "显示隐藏的文件、文件夹和驱动器",
       "ToolTip": "默认情况下，Windows 隐藏某些文件、文件夹和驱动器以防止意外修改或删除。开启此设置可在文件资源管理器中显示所有文件。",
       "Category": "Windows 资源管理器",
       "Priority": 3,
@@ -1116,7 +1116,7 @@
     },
     {
       "FeatureId": "HideHome",
-      "Label": "导航窗格中的「主页」",
+      "Label": "隐藏导航窗格中的「主页」",
       "ToolTip": "隐藏 Windows 资源管理器导航窗格中的「主页」部分。",
       "Category": "Windows 资源管理器",
       "Priority": 5,
@@ -1128,7 +1128,7 @@
     },
     {
       "FeatureId": "HideGallery",
-      "Label": "导航窗格中的「图库」",
+      "Label": "隐藏导航窗格中的「图库」",
       "ToolTip": "隐藏 Windows 资源管理器导航窗格中的「图库」部分。",
       "Category": "Windows 资源管理器",
       "Priority": 6,
@@ -1163,7 +1163,7 @@
     },
     {
       "FeatureId": "DisableUpdateASAP",
-      "Label": "更新一旦可用即获取",
+      "Label": "阻止 Windows 接收首批新的非安全更新",
       "ToolTip": "这将阻止您的电脑成为首批接收新的非安全更新的设备。您的电脑最终仍会收到这些更新。",
       "Category": "Windows 更新",
       "RegistryKey": "Disable_Update_ASAP.reg",
@@ -1174,7 +1174,7 @@
     },
     {
       "FeatureId": "PreventUpdateAutoReboot",
-      "Label": "登录时更新后自动重启",
+      "Label": "阻止 Windows 登录时更新后自动重启",
       "ToolTip": "这将阻止电脑在任何用户登录时自动重启以安装更新。",
       "Category": "Windows 更新",
       "RegistryKey": "Prevent_Auto_Reboot.reg",
@@ -1185,7 +1185,7 @@
     },
     {
       "FeatureId": "DisableDeliveryOptimization",
-      "Label": "与其他电脑共享已下载的更新",
+      "Label": "阻止 Windows 与其他电脑共享已下载的更新",
       "ToolTip": "这将阻止您的电脑与局域网或互联网上的其它电脑共享已下载的更新，同时也阻止从其他电脑下载更新。",
       "Category": "Windows 更新",
       "RegistryKey": "Disable_Delivery_Optimization.reg",
@@ -1218,7 +1218,7 @@
     },
     {
       "FeatureId": "Hide3dObjects",
-      "Label": "在'此电脑'下隐藏 '3D 对象'文件夹",
+      "Label": "在导航窗格中隐藏 '3D 对象'文件夹",
       "ToolTip": "从文件资源管理器的导航窗格中隐藏 '3D 对象' 文件夹。",
       "Category": "Windows 资源管理器",
       "Priority": 8,
@@ -1230,7 +1230,7 @@
     },
     {
       "FeatureId": "HideMusic",
-      "Label": "在'此电脑'下隐藏 '音乐'文件夹",
+      "Label": "在导航窗格中隐藏 '音乐'文件夹",
       "ToolTip": "从文件资源管理器的导航窗格中隐藏 '音乐' 文件夹。",
       "Category": "Windows 资源管理器",
       "Priority": 9,
@@ -1313,7 +1313,7 @@
     },
     {
       "FeatureId": "EnableWindowsSubsystemForLinux",
-      "Label": "启用 Windows 内置的 Linux 子系统",
+      "Label": "启用 Windows 的 Linux 子系统",
       "ToolTip": "这个功能让你在 Windows 里直接跑 Linux 子系统，省去了安装虚拟机的麻烦。",
       "Category": "Windows 可选功能",
       "RegistryKey": null,
